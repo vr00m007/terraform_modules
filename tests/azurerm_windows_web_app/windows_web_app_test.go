@@ -7,7 +7,7 @@ import (
 func Service_plan_test(t *testing.T) {
 	// retryable errors in terraform testing.
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
-		TerraformDir: "../../azurerm_service_plan"
+		TerraformDir: "../../azurerm_windows_web_app"
 	})
 
 	defer terraform.Destroy(t, terraformOptions)
